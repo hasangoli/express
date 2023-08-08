@@ -1,5 +1,5 @@
 /**
- * @desc      Get all bootcamps
+ * @description      Get all bootcamps
  * @route     GET /api/v1/bootcamps
  * @access    Public
  */
@@ -13,7 +13,7 @@ exports.getBootcamps = (req, res) => {
 };
 
 /**
- * @desc      Get a bootcamp
+ * @description      Get a bootcamp
  * @route     GET /api/v1/bootcamps/:id
  * @access    Public
  */
@@ -27,7 +27,7 @@ exports.getBootcamp = (req, res) => {
 };
 
 /**
- * @desc      Create a bootcamp
+ * @description      Create a bootcamp
  * @route     POST /api/v1/bootcamps
  * @access    Private
  */
@@ -41,7 +41,7 @@ exports.createBootcamp = (req, res) => {
 };
 
 /**
- * @desc      Update a bootcamp
+ * @description      Update a bootcamp
  * @route     PUT /api/v1/bootcamps/:id
  * @access    Private
  */
@@ -55,7 +55,7 @@ exports.updateBootcamp = (req, res) => {
 };
 
 /**
- * @desc      Delete a bootcamp
+ * @description      Delete a bootcamp
  * @route     DELETE /api/v1/bootcamps/:id
  * @access    Private
  */
