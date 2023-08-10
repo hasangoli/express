@@ -14,6 +14,9 @@ connectDB();
 
 const app = express();
 
+// Body parser
+app.use(express.json());
+
 // Dev logging middleware
 app.use(morgan('dev'));
 
@@ -29,7 +32,7 @@ const server = app.listen(PORT, () =>
 );
 
 // Handle unhandled promise rejections
-process.on('unhandledRejection', (err) => {
+process.on('unhandledRejection', err => {
   console.log(`Error; ${err.message}`);
   // Close server and exit process
   server.close(() => process.exit(1));
